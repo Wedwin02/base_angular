@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<div class="container">
+    <form [formGroup]="editarForm" (ngSubmit)="postForm(editarForm.value)">
+        <div class="form-Group">
+            <label for="">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="nombre">
+
+        </div>
+        <div class="form-Group">
+            <label for="">Direccion</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="direccion">
+
+        </div>
+        <div class="form-Group row">
+            <div class="col">
+                <label for="">DNI</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="dni">
+            </div>
+            <div class="col">
+                <label for="">Telefono</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="telefono">
+            </div>
+            <div class="col">
+                <label for="">Codigo Postal</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="codigoPostal">
+            </div>
+        </div>
+        <div class="form-Group row">
+            <div class="col">
+                <label for="">Fecha Naciemiento</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="fechanacimiento">
+            </div>
+            <div class="col">
+                <label for="">Genero</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="genero">
+            </div>
+            <div class="col">
+                <label for="">Correo</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="correo">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-danger" (click)="eliminar()">Eliminar</button>
+        </div>
+    </form>
+
+</div>
+
+
+<app-footer></app-footer>

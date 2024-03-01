@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="container">
+    <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value)">
+        <div class="form-Group">
+            <label for="">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="nombre">
+
+        </div>
+        <div class="form-Group">
+            <label for="">Direccion</label>
+            <input type="text" class="form-control" placeholder="Nombre del Direccion " formControlName="direccion">
+
+        </div>
+        <div class="form-Group row">
+            <div class="col">
+                <label for="">DNI</label>
+                <input type="text" class="form-control" placeholder="Nombre del DNI " formControlName="dni">
+            </div>
+            <div class="col">
+                <label for="">Telefono</label>
+                <input type="text" class="form-control" placeholder="Nombre del Telefono " formControlName="telefono">
+            </div>
+            <div class="col">
+                <label for="">Codigo Postal</label>
+                <input type="text" class="form-control" placeholder="Nombre del Codigo Postal " formControlName="codigoPostal">
+            </div>
+        </div>
+        <div class="form-Group row">
+            <div class="col">
+                <label for="">Fecha Naciemiento</label>
+                <input type="text" class="form-control" placeholder="Nombre del Paciente " formControlName="fechanacimiento">
+            </div>
+            <div class="col">
+                <label for="">Genero</label>
+                <input type="text" class="form-control" placeholder="Nombre del Genero " formControlName="genero">
+            </div>
+            <div class="col">
+                <label for="">Correo</label>
+                <input type="text" class="form-control" placeholder="Nombre del Correo " formControlName="correo">
+            </div>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+</div>
+<app-footer></app-footer>
